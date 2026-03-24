@@ -108,7 +108,7 @@ public partial class ServerLoader
                     await db.InsertAsync(server);
                     Core.Logger.LogInformation("Registered server '{ServerName}' ({IP}:{Port}) in Admins DB.", server.Hostname, server.IP, server.Port);
                 }
-                else if (existingByIp > 0)
+                else if (existingByGuid == 0 && existingByIp > 0)
                 {
                     var existingServer = await db.FirstOrDefaultAsync<Database.Models.Server>(s => s.IP == serverIp && s.Port == port);
 
