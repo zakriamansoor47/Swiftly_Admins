@@ -157,6 +157,7 @@ The Immunity Mode system controls how admins can interact with other admins base
 | `!slap` | `admins.commands.slap` | `<player> [damage]` | Slap and damage a player (0-100 damage, with knockback) |
 | `!god` | `admins.commands.god` | `<player>` | Toggle god mode (invulnerability) for a player |
 | `!beacon` | `admins.commands.beacon` | `<player>` | Toggle beacon effect on a player (glowing outline visible through walls) |
+| `!kick` | `admins.commands.kick` | `<player>` | Kick a player from the server |
 
 #### Identity & Economy
 
